@@ -1,0 +1,47 @@
+---
+title: "IPE Paper: Kazakhstan and Foreign Direct Investment"
+author: "Daniel Shapiro"
+date: "4/4/2023"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(readr)
+library(readxl)
+```
+
+```{r}
+industries <- read.csv("wiiw-fdi-database.csv")
+partners <- read.csv("wiiw_partners.csv")
+```
+
+```{r}
+editeddata <- industries %>%
+  filter(Unit == "EUR m")
+```
+
+```{r}
+editedpartners <- partners %>% 
+  filter(Unit == "EUR m") %>%
+  filter(Partner %in% c("China", "Russia", "United States")) %>%
+  select(-c(Tree.Level.1, Country.Code, Country, Partner.Code, Unit, Footnotes, Sources)) %>%
+  pivot_longer(!c(Direction, Partner), names_to = "Year", values_to = "Value")
+
+editedpartners$Year <- gsub("X_", "", editedpartners$Year)
+editedpartners$Year <- as.numeric(editedpartners$Year)
+editedpartners$Value <- as.numeric(editedpartners$Value)
+```
+
+```{r stock}
+fdistock <- editedpartners %>%
+  filter(Direction == "FDI inward stock")
+```
+
+```{r}
+ggplot(fdistock, aes(x = Year, y = Value, color = Partner)) +
+  geom_point() +
+  geom_line()
+```
+
