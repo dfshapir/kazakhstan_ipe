@@ -1,8 +1,10 @@
 ---
 title: "IPE Paper: Kazakhstan and Foreign Direct Investment"
 author: "Daniel Shapiro"
-date: "4/4/2023"
+date: "PSCI 6402"
 output: pdf_document
+header-includes:
+  - \usepackage{setspace}
 ---
 
 ```{r setup, include=FALSE}
@@ -37,11 +39,55 @@ editedpartners$Value <- as.numeric(editedpartners$Value)
 ```{r stock}
 fdistock <- editedpartners %>%
   filter(Direction == "FDI inward stock")
+fdiinflow <- editedpartners %>%
+  filter(Direction == "FDI inflow")
 ```
 
+\doublespacing
+
+Kazakhstan, the largest country in Central Asia and the 9th-largest in the world, has a unique geopolitical and geoeconomic profile. A former Soviet republic with a large number of ethnic Russian citizens and a relatively authoritarian government, Kazakhstan has enjoyed close ties with Russia since the dissolution of the Soviet Union in 1991, joining the Russia-led Eurasian Economic Union (EAEU) and the Collective Security Treaty Organization (CSTO), as well as the Shanghai Cooperation Organization (SCO), among other organizations. Additionally, given its 953-mile long border with China, Kazakhstan has steadily developed its political and economic ties with its large eastern neighbor over the past 30 years. Trade between the two countries has increased rapidly, and China's Belt and Road Initiative (BRI) features Kazakhstan as a key transit country for goods travelling between China and Europe. Given its positioning between Russia to its north and China to its east, it is no surprise that Kazakhstan has become a key point of focus for both of these powerful states.
+
+However, looking at one measure of cooperation -- foreign direct investment (FDI) -- an interesting trend emerges. While China and Russia do work closely with Kazakhstan in many areas, the United States far outstrips these two powers in FDI stock in Kazakhstan, especially beginning in 2014. Figure 1 shows this trend:
+
+*Figure 1:*
+  
 ```{r}
 ggplot(fdistock, aes(x = Year, y = Value, color = Partner)) +
   geom_point() +
-  geom_line()
+  geom_line() +
+  labs(title = "Kazakhstan FDI Stock, 2003-2021",
+       subtitle = "Data from wiiw",
+       y = "FDI Stock in EUR m",
+       x = "Year")
 ```
 
+What explains this rise in American investment and the gulf between America's presence and China's and Russia's? There are certainly economic factors at work here -- the 2014 oil price crash and ensuing depreciation of the tenge likely influenced this phenomenon, for example. However, there are political explanations as well. I identify several hypotheses related to different potential political factors that could impact the rise of American FDI stock in Kazakhstan, with some centered around internal Kazakh politics, others on American politics, and others on global politics. Through process tracing, we can see that aspects of all three were at work, but ________.
+
+### Hypotheses
+
+This paper takes three hypotheses on the political reasons for heightened US FDI stock in Kazakhstan and analyzes them through process tracing to determine their veracity. I find that _____
+
+* H1: **Internal: Kazakhstan.** Political changes inside Kazakhstan led to increased American investment.
+* H2: **Internal: USA.** Political changes inside the US led to increased American investment.
+* H3: **External: International.** Political changes in the international arena led to increased American investment in Kazakhstan.
+
+### Background and Literature Review
+
+This paper is situated within a number of important debates in political science, the most relevant of which deal with dynamics related to foreign direct investment. For one, there is the question of why companies choose to engage in foreign direct investment. Two famous models that offer explanations of this phenomenon are Dunning's OLI (Ownership, Location, Internalization) paradigm[^1] and Markusen's Knowledge Capital model[^2]. While both of these models offer persuasive evidence as to why firms *in general* choose to pursue foreign direct investment, they are less well-suited to answering the political side of the FDI issue and certainly do not address differentiation in countries' approaches to FDI in a given country over time.
+
+### Methodology
+
+```{r}
+ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Kazakhstan FDI Inflow, 2003-2021",
+       subtitle = "Data from wiiw",
+       y = "FDI Inflow in EUR m",
+       x = "Year")
+```
+
+
+[^1]: John Dunning, Explaining International Production (London: Unwin Hyman, 1988).
+[^2]: James R. Markusen, Multinational Firms and the Theory of International Trade (Cambridge:
+MIT Press, 2002).
