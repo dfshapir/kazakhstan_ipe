@@ -1,7 +1,6 @@
 ---
 title: "IPE Paper: Kazakhstan and Foreign Direct Investment"
-author: "Daniel Shapiro"
-date: "PSCI 6402"
+author: "Daniel Shapiro, PSCI 6402"
 output: pdf_document
 header-includes:
   - \usepackage{setspace}
@@ -45,20 +44,19 @@ fdiinflow <- editedpartners %>%
 
 \doublespacing
 
-Kazakhstan, the largest country in Central Asia and the 9th-largest in the world, has a unique geopolitical and geoeconomic profile. A former Soviet republic with a large number of ethnic Russian citizens and a relatively authoritarian government, Kazakhstan has enjoyed close ties with Russia since the dissolution of the Soviet Union in 1991, joining the Russia-led Eurasian Economic Union (EAEU) and the Collective Security Treaty Organization (CSTO), as well as the Shanghai Cooperation Organization (SCO), among other organizations. Additionally, given its 953-mile long border with China, Kazakhstan has steadily developed its political and economic ties with its large eastern neighbor over the past 30 years. Trade between the two countries has increased rapidly, and China's Belt and Road Initiative (BRI) features Kazakhstan as a key transit country for goods travelling between China and Europe. Given its positioning between Russia to its north and China to its east, it is no surprise that Kazakhstan has become a key point of focus for both of these powerful states.
-
-However, looking at one measure of cooperation -- foreign direct investment (FDI) -- an interesting trend emerges. While China and Russia do work closely with Kazakhstan in many areas, the United States far outstrips these two powers in FDI stock in Kazakhstan, especially beginning in 2014 -- arguably the beginning of the current era of overt great power competition. Figure 1 shows this trend:
+Kazakhstan, the largest country in Central Asia and the 9th-largest in the world, has a unique geopolitical and geoeconomic profile. A former Soviet republic with a large number of ethnic Russian citizens and a relatively authoritarian government, Kazakhstan has enjoyed close ties with Russia since the dissolution of the Soviet Union in 1991, joining the Russia-led Eurasian Economic Union (EAEU) and the Collective Security Treaty Organization (CSTO), as well as the Shanghai Cooperation Organization (SCO), among other organizations. Additionally, given its 953-mile long border with China, Kazakhstan has steadily developed its political and economic ties with its large eastern neighbor over the past 30 years. Trade between the two countries has increased rapidly, and China's Belt and Road Initiative (BRI) features Kazakhstan as a key transit country for goods travelling between China and Europe. Given its positioning between Russia to its north and China to its east, it is no surprise that Kazakhstan has become a key area for both states. However, looking at one measure of cooperation -- foreign direct investment (FDI) -- an interesting trend emerges. While China and Russia do work closely with Kazakhstan in many areas, the United States far outstrips these two powers in FDI stock in Kazakhstan, especially beginning in 2014 -- arguably the beginning of the current era of overt great power competition. Figure 1 shows this trend:
 
 *Figure 1:*
   
-```{r}
+```{r, out.width = '65%', fig.align = 'left'}
 ggplot(fdistock, aes(x = Year, y = Value, color = Partner)) +
   geom_point() +
   geom_line() +
   labs(title = "Kazakhstan FDI Stock, 2003-2021",
        subtitle = "Data from wiiw",
        y = "FDI Stock in EUR m",
-       x = "Year")
+       x = "Year") +
+  theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm"))
 ```
 
 What explains this rise in American investment and the gulf between America's presence and China's and Russia's? There are certainly economic factors at work here -- the 2014 oil price crash and ensuing depreciation of the tenge likely influenced this phenomenon, for example. However, there are political explanations as well. I identify several hypotheses related to different potential political factors that could impact the increased gulf between American FDI stock and Chinese and Russian FDI stock in Kazakhstan, with some centered around internal Kazakh politics, others on American politics, and others on global politics. Through process tracing, we can see that aspects of all three were at work, but ________.
@@ -89,14 +87,16 @@ Using this background, this paper makes a couple of key contributions. For one, 
 
 ### Data and Methods
 
-This paper relies on data from The Vienna Institute for International Economic Studies (wiiw), an Austria-based organization that provides, among other things, the wiiw FDI database. The database markets itself as a "comprehensive and unique database on Foreign Direct Investment activities related to 23 countries in Central, East and Southeast Europe." All data on FDI in Kazakhstan is taken from this database.
+This paper relies on data from The Vienna Institute for International Economic Studies (wiiw), an Austria-based organization that provides, among other things, the wiiw FDI database. The database markets itself as a "comprehensive and unique database on Foreign Direct Investment activities related to 23 countries in Central, East and Southeast Europe." All data on FDI in Kazakhstan is taken from this database. This study largely focuses on FDI Stock as an indicator, rather than FDI flow; for arguments as to why FDI stock is a superior indicator to FDI flow, see Kerner (2014).
 
-Methodologically, this study uses process tracing to analyze dynamics related to foreign direct investment in a single-country case study (Kazakhstan). Lynch (2005) provides a good defense for the efficacy of single-country case studies, writing that "within-country comparisons make it possible to test hypotheses with a high degree of internal validity, since they essentially control for possibly confounding covariates at the level of national institutions, policy-making styles, resource endowments, positioning in the world economy, cultural beliefs, or the like." According to scholars such as Lynch, a more complex notion of causality "...demands that good theories not only 'predict' the apposite political outcome, but also get the causal process that generated it right." Bennett and George (1993) write that single case studies can be used as "exemplars" for exploratory research and hypothesis-generating research. Lynch (2005) also argues that single-country case studies can be used for "tough cases" which pose a particular challenge to existing theoretical frameworks and models.
+Methodologically, this study uses process tracing to analyze dynamics related to foreign direct investment in a single-country case study (Kazakhstan). Process tracing can be defined as a key qualitative method that “examines diagnostic pieces of evidence … with the goal of achieving and refining causal inference.”[^5] In this case, potential “diagnostic pieces of evidence” are numerous: many different factors can influence firms' decisions to invest in one country or another, and determining which ones a) actually play a role in the outcome and b) are relevant to this paper requires discretion. Thus, this paper analyzes three general hypotheses that could impact the observed outcome. This study by no means excludes the possibility that other factors influenced the outcome; however, for purposes of this paper, variables are limited to those directly relating to the aforementioned hypotheses.
 
+In this research, I utilize several data sources, including news articles, opinion pieces, and academic commentaries, as well as journalistic and academic interviews. Additionally, I utilize official statements, meeting summaries, press briefings, and other official correspondence related to FDI. Given that Kazakhstan is a relatively authoritarian and closed country, in-depth primary source-based analysis of the political system is relatively difficult to find, but for this paper, available data is sufficient to gain important insights. Through process tracing, I show how my work supports or partially supports hypotheses ______. 
 
+Why a single-country case study? Lynch (2005) provides a good defense for the efficacy of single-country case studies, writing that "within-country comparisons make it possible to test hypotheses with a high degree of internal validity, since they essentially control for possibly confounding covariates at the level of national institutions, policy-making styles, resource endowments, positioning in the world economy, cultural beliefs, or the like." According to scholars such as Lynch, a more complex notion of causality "...demands that good theories not only 'predict' the apposite political outcome, but also get the causal process that generated it right." Bennett and George (1993) write that single case studies can be used as "exemplars" for exploratory research and hypothesis-generating research. Lynch (2005) also argues that single-country case studies can be used for "tough cases" which pose a particular challenge to existing theoretical frameworks and models. Kazakhstan certainly presents a unique case. Located between Russia and China but with definite ties to the West and bountiful natural resource deposits, Kazakhstan deserves individual analysis. Additionally, given that this paper utilizes process tracing to make conclusions about trends in FDI sources, keeping the paper limited to only Kazakhstan allows for deep description of causal-process mechanisms; bringing in other countries would likely dilute more than help the argument. 
 
 ```{r}
-ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
+flowplot <- ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
   geom_point() +
   geom_line() +
   labs(title = "Kazakhstan FDI Inflow, 2003-2021",
@@ -107,7 +107,7 @@ ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
 
 
 [^1]: John Dunning, Explaining International Production (London: Unwin Hyman, 1988).
-[^2]: James R. Markusen, Multinational Firms and the Theory of International Trade (Cambridge:
-MIT Press, 2002).
-[^3]: Data from UNCTAD. Link: https://hbs.unctad.org/foreign-direct-investment/#:~:text=The%20share%20of%20developed%20economies,cent%20to%2025.7%20per%20cent. 
+[^2]: James R. Markusen, Multinational Firms and the Theory of International Trade (Cambridge: MIT Press, 2002).
+[^3]: Data from UNCTAD.  
 [^4]: See also Li, 2006; Li & Resnick, 2003. 
+[^5]: David Collier, “Process Tracing: Introduction and Exercises.” To Accompany Rethinking Social Inquiry, 2nd Edition. Beta Version (September 22, 2010).
