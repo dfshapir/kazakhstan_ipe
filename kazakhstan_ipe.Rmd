@@ -14,7 +14,7 @@ library(readxl)
 ```
 
 ```{r}
-industries <- read.csv("wiiw-fdi-database.csv")
+industries <- read.csv("industrial.csv")
 partners <- read.csv("wiiw_partners.csv")
 ```
 
@@ -59,15 +59,17 @@ ggplot(fdistock, aes(x = Year, y = Value, color = Partner)) +
   theme(plot.margin = unit(c(0.5, 0.5, 0.5, 0.5), "cm"))
 ```
 
-What explains this rise in American investment and the gulf between America's presence and China's and Russia's? There are certainly economic factors at work here -- the 2014 oil price crash and ensuing depreciation of the tenge likely influenced this phenomenon, for example. However, there are political explanations as well. I identify several hypotheses related to different potential political factors that could impact the increased gulf between American FDI stock and Chinese and Russian FDI stock in Kazakhstan, with some centered around internal Kazakh politics, others on American politics, and others on global politics. Through process tracing, we can see that aspects of all three were at work, but ________.
+What explains this rise in American investment and the gulf between America's presence and China's and Russia's? There are certainly economic factors at work here -- the 2014 oil price crash and ensuing depreciation of the tenge likely influenced this phenomenon, for example. However, there are political explanations as well. I identify several hypotheses related to different potential political factors that could impact the increased gulf between American FDI stock and Chinese and Russian FDI stock in Kazakhstan, with some centered around internal Kazakhstani politics, others on American politics, and others on global politics. Through process tracing, we can see that aspects of all three were at work, but I predict that internal Kazakhstani politics and global politics have the largest effects on the outcome.
 
 ### Hypotheses
 
-This paper takes three hypotheses on the political reasons for heightened US FDI stock in Kazakhstan (relative to Chinese and Russian) and analyzes them through process tracing to determine their veracity. I find that _____
+This paper takes three hypotheses on the political reasons for heightened US FDI stock in Kazakhstan (relative to Chinese and Russian) and analyzes them through process tracing to determine their veracity. I predict that most political changes that influenced this outcome were **internal** to Kazakhstan and largely tied to concerted efforts by the Nazarbayev regime to attract additional outside investment in Kazakhstan's oil and gas industry. However, sanctions on nearby Russia and the ensuing heightening of political risk tied to Kazakhstan's northern neighbor likely played a role in these developments as well. 
 
-* H1: **Internal: Kazakhstan.** Political changes inside Kazakhstan led to increased American investment in comparison to Chinese and Russian investment.
-* H2: **Internal: USA.** Political changes inside the US led to increased American investment in comparison to Chinese and Russian investment.
-* H3: **External: International.** Political changes in the international arena led to increased American investment in comparison to Chinese and Russian investmentin Kazakhstan.
+* H1: **Internal: Kazakhstan.** Political changes inside Kazakhstan led to increased American investment in comparison to Chinese and Russian investment. These changes could include a) liberalization in the Kazakhstani regime, both initially during the Nazarbayev era, and in the present day under Kassym-Jomart Tokayev; b) legislation passed that increases outside access to Kazakhstan's mineral wealth, or c) tightened controls on corruption.
+* H2: **Internal: USA.** Political changes inside the US led to increased American investment in comparison to Chinese and Russian investment. These could be, for example, that the US government became more interested in encouraging foreign direct investment in general beginning in 2014, especially in "battleground" areas as American relations with other great powers grew more antagonistic. 
+* H3: **External: International.** Political changes in the international arena led to increased American investment in comparison to Chinese and Russian investment in Kazakhstan. These changes could be tied either a) to the increased level of political risk in neighboring Russia, causing American companies to move south across the border, or b) to political shifts surrounding American investments in other large hydrocarbon-producing countries, leading American MNCs to invest more heavily in Kazakhstan.
+
+These potential factors are certainly not mutually exclusive, and multiple factors can play important roles simultaneously. Below, I provide some background for the topic, the aforementioned hypotheses, and for the scholarly discourse in which this paper finds itself.
 
 ### Background and Literature Review
 
@@ -91,9 +93,57 @@ This paper relies on data from The Vienna Institute for International Economic S
 
 Methodologically, this study uses process tracing to analyze dynamics related to foreign direct investment in a single-country case study (Kazakhstan). Process tracing can be defined as a key qualitative method that “examines diagnostic pieces of evidence … with the goal of achieving and refining causal inference.”[^5] In this case, potential “diagnostic pieces of evidence” are numerous: many different factors can influence firms' decisions to invest in one country or another, and determining which ones a) actually play a role in the outcome and b) are relevant to this paper requires discretion. Thus, this paper analyzes three general hypotheses that could impact the observed outcome. This study by no means excludes the possibility that other factors influenced the outcome; however, for purposes of this paper, variables are limited to those directly relating to the aforementioned hypotheses.
 
-In this research, I utilize several data sources, including news articles, opinion pieces, and academic commentaries, as well as journalistic and academic interviews. Additionally, I utilize official statements, meeting summaries, press briefings, and other official correspondence related to FDI. Given that Kazakhstan is a relatively authoritarian and closed country, in-depth primary source-based analysis of the political system is relatively difficult to find, but for this paper, available data is sufficient to gain important insights. Through process tracing, I show how my work supports or partially supports hypotheses ______. 
+In this research, I utilize several data sources, including news articles, opinion pieces, and academic commentaries, as well as journalistic and academic interviews. Additionally, I utilize official statements, meeting summaries, press briefings, and other official correspondence related to FDI. Given that Kazakhstan is a relatively authoritarian and closed country, in-depth primary source-based analysis of the political system is relatively difficult to find, but for this paper, available data is sufficient to gain important insights. Through process tracing, I show how my work supports or partially supports hypotheses 1 and 3. 
 
 Why a single-country case study? Lynch (2005) provides a good defense for the efficacy of single-country case studies, writing that "within-country comparisons make it possible to test hypotheses with a high degree of internal validity, since they essentially control for possibly confounding covariates at the level of national institutions, policy-making styles, resource endowments, positioning in the world economy, cultural beliefs, or the like." According to scholars such as Lynch, a more complex notion of causality "...demands that good theories not only 'predict' the apposite political outcome, but also get the causal process that generated it right." Bennett and George (1993) write that single case studies can be used as "exemplars" for exploratory research and hypothesis-generating research. Lynch (2005) also argues that single-country case studies can be used for "tough cases" which pose a particular challenge to existing theoretical frameworks and models. Kazakhstan certainly presents a unique case. Located between Russia and China but with definite ties to the West and bountiful natural resource deposits, Kazakhstan deserves individual analysis. Additionally, given that this paper utilizes process tracing to make conclusions about trends in FDI sources, keeping the paper limited to only Kazakhstan allows for deep description of causal-process mechanisms; bringing in other countries would likely dilute more than help the argument. 
+
+### Predicted Empirical Evidence
+
+This paper mostly looks at political factors that could impact these trends in American, Chinese, and Russian FDI Stock in Kazakhstan. There are also undoubtedly economic factors at play as well: Given that Kazakhstan's economy is heavily dependent on natural resource rents, one would suspect that shifts in oil prices and the resulting effects on Kazakhstan's currency and economy will have some effect on FDI trends. 
+
+```{r}
+industry_stock <- industries %>%
+  filter(Direction == "FDI inward stock") %>%
+  filter(Unit %in% c("in % of total", "in % of total manufacturing")) %>%
+  select(-Unit, -Sources, -Tree.Level.1, -Country.Code, -Country, -Direction, -Classification, -Digit, -Footnotes, -X_2000, -X_2001, -X_2002, -X_2003, -X_2004, -X_2005, -X_2006, -X_2007, -X_2008, -X_2009)
+# Took out missing data, pivoted, and am now removing excess "manufacturing" breakdown
+
+industry_stock <- industry_stock[2:17, ]
+
+# Now I'm going to combine B Mining and Quarrying with M Professional, scientific and 
+#technical activities. There was a reclassification in 2016. First, though, I have to pivot.
+
+industry_stock <- industry_stock %>%
+  pivot_longer(!Industry.Product, names_to = "Year", values_to = "Value") %>%
+  pivot_wider(names_from = Industry.Product, values_from = Value) 
+
+industry_stock$Combined <- as.numeric(industry_stock$`B  Mining and quarrying`) + as.numeric(industry_stock$`M  Professional, scientific and technical activities`)
+
+industry_stock$Combined <- as.character(industry_stock$Combined)
+
+industry_stock <- industry_stock %>%
+  pivot_longer(!Year, names_to = "Industry.Product", values_to = "Value")
+
+industry_stock$Year <- gsub("X_", "", industry_stock$Year)
+industry_stock$Year <- as.numeric(industry_stock$Year)
+industry_stock$Value <- as.numeric(industry_stock$Value)
+
+oilplotdata <- industry_stock %>%
+  filter(Industry.Product == "Combined")
+```
+
+```{r, out.width = '65%', fig.align = 'left'}
+oilplot <- ggplot(oilplotdata, aes(x = Year, y = Value)) + 
+  geom_point() +
+  geom_line() +
+  ylim(0, 100) +
+  labs(title = "Combined FDI from mining and R&D", 
+       subtitle = "Data from wiiw",
+       y = "Percent of FDI Stock")
+
+oilplot
+```
+
 
 ```{r}
 flowplot <- ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
