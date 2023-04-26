@@ -97,9 +97,9 @@ Methodologically, this study uses process tracing to analyze dynamics related to
 
 In this research, I utilize several data sources, including news articles, opinion pieces, and academic commentaries, as well as journalistic and academic interviews. Additionally, I utilize official statements, meeting summaries, press briefings, and other official correspondence related to FDI. Given that Kazakhstan is a relatively authoritarian and closed country, in-depth primary source-based analysis of the political system is relatively difficult to find, but for this paper, available data is sufficient to gain important insights. Through process tracing, I show how my work supports, partly supports, or does not support my hypotheses. 
 
-Why a single-country case study? Lynch (2005) provides a good defense for the efficacy of single-country case studies, writing that "within-country comparisons make it possible to test hypotheses with a high degree of internal validity, since they essentially control for possibly confounding covariates at the level of national institutions, policy-making styles, resource endowments, positioning in the world economy, cultural beliefs, or the like." According to scholars such as Lynch, a more complex notion of causality "...demands that good theories not only 'predict' the apposite political outcome, but also get the causal process that generated it right." Bennett and George (1993) write that single case studies can be used as "exemplars" for exploratory research and hypothesis-generating research. Lynch (2005) also argues that single-country case studies can be used for "tough cases" which pose a particular challenge to existing theoretical frameworks and models. Kazakhstan certainly presents a unique case. Located between Russia and China but with definite ties to the West and bountiful natural resource deposits, Kazakhstan deserves individual analysis. Additionally, given that this paper utilizes process tracing to make conclusions about trends in FDI sources, keeping the paper limited to only Kazakhstan allows for deep description of causal-process mechanisms; bringing in other countries would likely dilute more than help the argument. 
+Why a single-country case study? Lynch (2005) provides a good defense for the efficacy of single-country case studies, writing that "within-country comparisons make it possible to test hypotheses with a high degree of internal validity, since they essentially control for possibly confounding covariates at the level of national institutions, policy-making styles, resource endowments, positioning in the world economy, cultural beliefs, or the like." According to scholars such as Lynch, a more complex notion of causality "...demands that good theories not only 'predict' the apposite political outcome, but also get the causal process that generated it right." Bennett and George (1997) write that single case studies can be used as "exemplars" for exploratory research and hypothesis-generating research. Lynch (2005) also argues that single-country case studies can be used for "tough cases" which pose a particular challenge to existing theoretical frameworks and models. Kazakhstan certainly presents a unique case. Located between Russia and China but with definite ties to the West and bountiful natural resource deposits, Kazakhstan deserves individual analysis. Additionally, given that this paper utilizes process tracing to make conclusions about trends in FDI sources, keeping the paper limited to only Kazakhstan allows for deep description of causal-process mechanisms; bringing in other countries would likely dilute more than help the argument. 
 
-### Predicted Empirical Evidence
+### Predicted Empirical Evidence and Implications
 
 This paper mostly looks at political factors that could impact these trends in American, Chinese, and Russian FDI Stock in Kazakhstan. There are also undoubtedly economic factors at play as well: Given that Kazakhstan's economy is heavily dependent on natural resource rents, one would suspect that shifts in oil prices and the resulting effects on Kazakhstan's currency and economy will have some effect on FDI trends. However, given that this paper focuses on conflict and other political factors, this section will discuss potential empirical evidence that could help support or not support various hypotheses.
 
@@ -155,7 +155,77 @@ oilplot
 
 In other words, although the Russia-Ukraine conflicts and Western sanctions on Russia started in 2014, it is possible that the spike in 2014 may be from other sources, as it is difficult to move a lot of investment out that quickly, especially in sectors that require as much labor and infrastructure as the oil industry. 
 
+We also could find less clear evidence that could still provide support for H1. For example, if we find that certain companies scale down their operations in Russia (or, for that matter, Ukraine) in 2013 or 2014 and then scale up their operations in Kazakhstan directly afterwards, this would appear to lend some credence to the "external stimuli" hypothesis, even if not directly stated. Additionally, a transfer of operations from a country at war to a country not at war is not the only way that war could affect MNC activity. Perhaps the presence of war in neighboring countries pushed US companies to invest in Kazakhstan for other reasons: maybe, for example, there was a movement among US MNCs to grow US involvement in Kazakhstan to *preserve* Kazakhstan as a space where US-based companies could operate without fear, following logic described by Johns and Wellhausen (2016).[^10] Or, perhaps, 
+
+Moving to alternative hypotheses, how would I be convinced of H2's veracity? If a detailed analysis of Kazakhstani official documents and speeches shows that the Nazarbayev administration actively worked to encourage increased investment specifically from the United States around this time period, this would be fairly solid evidence for H2. The Nazarbayev administration pushing for increased western investment in general as well would support this hypothesis; maybe US companies followed behind other MNCs with relatively similar home environments and corporate philosophies. Looking at other countries' trends in FDI stock in Kazakhstan at the time, we can observe a rise in Dutch FDI stock as well, for example. Finally, evidence for H2 could take more indirect forms: perhaps the Nazarbayev administration did not say anything specific about attempting to attract more Western FDI; maybe some laws were just changed that encouraged more Western MNCs to invest, such as anti-corruption laws, lower regulations, etc. These sorts of evidence would help support H2.
+
+There is potential evidence that would help me believe in H3's relevance as well. If we find that the US government actively encouraged certain actions by US-based MNCs and that US-based MNCs actually followed these directions, there would be strong support for H3. American firms are certainly not state-run, but it is possible that the government had a say, especially with regard to the sanctions regime against Russia that was coming out at the time. Additionally, if evidence shows that something specific about the US's approach toward either foreign direct investment as a whole or FDI specifically regarding Kazakhstan changed and US-based MNCs reacted in kind, this would support H3 as well. We know that the Barack Obama administration was more externally-focused than other US administrations; while some of the US FDI growth in Kazakhstan rest occurred during the Trump administration, it is possible that path dependency led firms to just continue their momentum from the Trump period. I consider the possibility of finding this sort of evidence unlikely given that Obama had been in office for several years by the time that the spike started; nonetheless, it is possible that Obama-era policies had some impact on firm activities in Kazakhstan.
+
+### Conclusions
+
+Overall, this paper will provide valuable contributions to a number of different areas of scientific and academic inquiry. Most importantly, it will utilize a single-country case study (Kazakhstan) to evaluate aspects of an understudied aspect of the IPE literature -- how war impacts foreign investment. By looking at Kazakhstan, a country adjacent to Russia, we can gain greater insights on the degree to which firms move from country to country due to war, and how that process looks. Additionally, using process tracing on a single-country case study, we can examine detailed evidence and causal-process mechanisms to better understand not just how firms deal with war in a given region, but also deal with war specifically in the post-Soviet context. 
+
+Secondly, this study will shed light on influential internal processes occurring in both Kazakhstan and the United States during the middle of the last decade. For scholars and policymakers interested in learning more about politics in these two countries -- especially during a tumultuous period in parts of the former Soviet Union -- this paper will provide interesting information and useful insights that should help scholars and practitioners better deal with these sorts of questions in the future. Especially given the current conflict between Russia and Ukraine and the implementation of the "mother of all sanctions" on Russia, research like this should prove timely not just now, but in the future as well. 
+
+Finally, the paper will address broader, more fully-studied aspects of the FDI literature and provide an intriguing data point for scholars to reference in future theoretical and practical work. The paper addresses questions such as a) why companies choose to engage in foreign direct investment in general, b) what internal factors within a host country impact the relative attraction of FDI, c) what internal factors within firms' host country impact their decisions to invest in one place or another, and d) how international events impact firms' calculus to increase or decrease their level of investment in a given location. Through all of these contributions, this paper will be a useful addition to the FDI literature, to the broader IPE literature, and to our general knowledge about Kazakhstan, the United States, and the post-Soviet region as a whole.[^11]
+
+### Bibliography
+
+\singlespacing
+
+Beazer, Quintin H., and Daniel J. Blake. “The conditional nature of political risk: How home institutions influence the location of foreign direct investment.” *American Journal of Political Science* 62, no. 2 (2018): 470-485.
+
+Bennett, Andrew and Alexander George. *Research Design Tasks in Case Study Method.* Paper presented at the MacArthur Foundation Workshop on Case Study Methods, Belfer Center for Science and International Affairs (BCSIA), Harvard University (October 17-19, 1997).
+
+Bussmann, Margit. “Foreign Direct Investment and Militarized International Conflict.” *Journal of Peace Research* 47, no. 2 (2010): 143–53. 
+
+Collier, David. “Process Tracing: Introduction and Exercises.” To Accompany Rethinking Social Inquiry, 2nd Edition. Beta Version (September 22, 2010).
+
+Delios, Andrew, and Witold Jerzy Henisz. "Political Hazards, Experience, and Sequential Entry Strategies: The International Expansion of Japanese Firms, 1980–1998." *Strategic Management Journal* 24, no. 11 (2003): 1153-1164.
+
+Dunning, John. Explaining International Production (London: Unwin Hyman, 1988).
+
+Dunning, John. Multinational Enterprises and the Global Economy (Reading: Addison-Wesley, 1993), 144.
+
+Jensen, Nathan M. “Democratic governance and multinational corporations: Political regimes and inflows of foreign direct investment.” *International Organization* 57.3 (2003): 587-616.
+
+Jensen, Nathan M. *Nation-States and the Multinational Corporation: Political Economy of Foreign Direct Investment*. Princeton, NJ: Princeton University Press (2006).
+
+Johns, Leslie, and Rachel L. Wellhausen. “Under One Roof: Supply Chains and the Protection of Foreign Investment.” *American Political Science Review* 110, no. 1 (2016): 31–51. 
+
+Kerner, Andrew. “What we talk about when we talk about foreign direct investment.” *International Studies Quarterly* 58, no. 4 (2014): 804-815.
+
+Kobrin, Stephen. “Testing the Bargaining Hypothesis in the Manufacturing Sector in Developing Countries,” *International Organization* 41, no. 4 (1987):
+609–38.
+
+Levy, Brian, and Pablo Spiller. "The Institutional Foundations of Regulatory Commitment: A Comparative Analysis of Telecommunications Regulation," *The Journal of Law, Economics, and Organization* 10, no. 2 (1994): 201-246.
+
+Li, Quan, and Adam Resnick. “Reversal of Fortunes: Democratic Institutions and Foreign Direct Investment Inflows to Developing Countries.” *International Organization* 57, no. 1 (2003): 175–211. 
+
+Li, Quan. “Foreign Direct Investment and Interstate Military Conflict.” *Journal of International Affairs* 62, no. 1 (2008): 53–66.
+
+Li, Quan. “Democracy, autocracy, and expropriation of foreign direct investment.” *Comparative Political Studies* 42, no. 3 (2009): 1098-1127.
+
+Lynch, Julia. “Can One Country Be Better Than Two for Comparative Politics?” *Italian Politics and Society* 60 (2005): 8-10.
+
+Mankiw, N. Gregory et. al. "A Contribution to the Empirics of Economic Growth." *The Quarterly Journal of Economics* 107, no. 3 (1992): 407-437.
+
+Markusen, James R. Multinational Firms and the Theory of International Trade (Cambridge: MIT Press, 2002).
+
+Morisset, Jacques and Neda Pirnia. “How Tax Policy and Incentives Affect Foreign Direct Investment: A Review,” World Bank Working Paper, 2509, 2000; OECD, *Corporate Tax Incentives for Foreign Direct Investment,* no. 4, Paris: OECD (2001).
+
+Nigh, Douglas. "The Effects of Political Events on United States Direct Foreign Investment: A Pooled Time-Series Cross-Sectional Analysis." *Journal of International Business Studies* 16, no. 1 (1985): 1-17.
+
+Putnam, Robert D. “Diplomacy and Domestic Politics: The Logic of Two-Level Games.” *International Organization* 42, no. 3 (1988): 427–60. 
+
+Staats, Joseph L. and Glen Biglaiser. "Foreign Direct Investment in Latin America: The Importance of Judicial Strength and Rule of Law." *International Studies Quarterly* 56: 193-202.
+
+Walter, Andrew and Guathan Sen. *Analyzing the Global Political Economy* (Princeton: Princeton University Press, 2009)
+
 ```{r}
+
+# ADDITIONAL PLOT!!
+
 flowplot <- ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
   geom_point() +
   geom_line() +
@@ -175,3 +245,5 @@ flowplot <- ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
 [^7]: David Collier, “Process Tracing: Introduction and Exercises.” To Accompany Rethinking Social Inquiry, 2nd Edition. Beta Version (September 22, 2010).
 [^8]: RFE/RL, "More International Firms Relocate From Russia To Kazakhstan Over War In Ukraine." *RFE/RL*, December 12, 2022. https://www.rferl.org/a/kazakhstan-companies-relocate-russia-war/32173170.html.
 [^9]: Due to changes in methodology, certain oil-related activities labeled as "geological exploration" were at one point placed under R&D; in 2016, wiiw relabeled them as "extraction of crude petroleum." To avoid ambiguity, I just combined the two categories for purposes of this study; this strategy more or less places upstream, downstream and R&D FDI together.
+[^10]: In other words, by adding additional US MNC presence in Kazakhstan, companies become more tightly linked together, increasing the costs that would come with potential expropriation in the case of a future conflict involving Kazakhstan. At the time, there was some worry that Kazakhstan could also be a target for Russia, given its large ethnic Russian population in the north of the country.
+[^11]: Note: for code, data, and some additional graphs, see my .rmd file at https://github.com/dfshapir/kazakhstan_ipe.
