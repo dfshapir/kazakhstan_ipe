@@ -101,9 +101,13 @@ Why a single-country case study? Lynch (2005) provides a good defense for the ef
 
 ### Predicted Empirical Evidence
 
-This paper mostly looks at political factors that could impact these trends in American, Chinese, and Russian FDI Stock in Kazakhstan. There are also undoubtedly economic factors at play as well: Given that Kazakhstan's economy is heavily dependent on natural resource rents, one would suspect that shifts in oil prices and the resulting effects on Kazakhstan's currency and economy will have some effect on FDI trends. 
+This paper mostly looks at political factors that could impact these trends in American, Chinese, and Russian FDI Stock in Kazakhstan. There are also undoubtedly economic factors at play as well: Given that Kazakhstan's economy is heavily dependent on natural resource rents, one would suspect that shifts in oil prices and the resulting effects on Kazakhstan's currency and economy will have some effect on FDI trends. However, given that this paper focuses on conflict and other political factors, this section will discuss potential empirical evidence that could help support or not support various hypotheses.
 
-Li (2008) FDI does not move quickly.
+Starting with H1, there are many bits of evidence that could indicate H1's veracity. Most obviously, there could be "smoking gun" evidence: for example, in the most recent round of conflict between Russia and Ukraine that began in February 2022, it was openly reported that many MNCs were moving their operations from Russia to Kazakhstan.[^8] If we find out from research that American MNCs moved en masse from Russia to Kazakhstan in 2014 as well, this could be a major piece of supporting evidence.
+
+However, further research would still be required in order to understand the true depth of such moves, and how much of an impact this cross-border migration would have on FDI stock figures. The FDI literature takes as a given that FDI does not move quickly, and moving billions of dollars worth of FDI stock across an international border may not take place over a short period of time. While some companies certainly may have moved due to conflict, without further research, we cannot be certain a) the degree to which these companies actually comprise a meaningful percentage of Kazakhstan's US-based FDI stock and b) how long it took for them to relocate their operations. Additionally, as shown below by Figure 2, most of Kazakhstan's FDI stock since 2010 has been in "mining and R&D," which, according to wiiw, is largely focused on various steps in the labor-intensive petroleum extraction process.
+
+*Figure 2*:[^9]
 
 
 ```{r}
@@ -149,6 +153,7 @@ oilplot <- ggplot(oilplotdata, aes(x = Year, y = Value)) +
 oilplot
 ```
 
+In other words, although the Russia-Ukraine conflicts and Western sanctions on Russia started in 2014, it is possible that the spike in 2014 may be from other sources, as it is difficult to move a lot of investment out that quickly, especially in sectors that require as much labor and infrastructure as the oil industry. 
 
 ```{r}
 flowplot <- ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
@@ -168,3 +173,5 @@ flowplot <- ggplot(fdiinflow, aes(x = Year, y = Value, color = Partner)) +
 [^5]: Quan Li, “Foreign Direct Investment and Interstate Military Conflict." *Journal of International Affairs* 62, no. 1 (2008): 53–66.
 [^6]: *Ibid*, 60. 
 [^7]: David Collier, “Process Tracing: Introduction and Exercises.” To Accompany Rethinking Social Inquiry, 2nd Edition. Beta Version (September 22, 2010).
+[^8]: RFE/RL, "More International Firms Relocate From Russia To Kazakhstan Over War In Ukraine." *RFE/RL*, December 12, 2022. https://www.rferl.org/a/kazakhstan-companies-relocate-russia-war/32173170.html.
+[^9]: Due to changes in methodology, certain oil-related activities labeled as "geological exploration" were at one point placed under R&D; in 2016, wiiw relabeled them as "extraction of crude petroleum." To avoid ambiguity, I just combined the two categories for purposes of this study; this strategy more or less places upstream, downstream and R&D FDI together.
